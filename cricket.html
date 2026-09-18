@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center">
+    
+
+    <h1>bat ball wicket game</h1>
+
+    <button onclick="
+    document.getElementById('userchoice').innerHTML = 'you choose bat';
+    let randomnmbr = Math.random() * 3;
+    let computerchoice;
+    if(randomnmbr > 0 && randomnmbr <=1){
+    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose bat';
+    }
+    else if(randomnmbr > 1 && randomnmbr <=2){
+    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose ball';
+    }
+    else{
+    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
+    }   
+
+    if(computerchoice === 'computer choose ball'){
+        document.getElementById('result').innerHTML = 'You Win!';
+    }
+    else if(computerchoice === 'computer choose bat'){
+        document.getElementById('result').innerHTML = `it's a tie!`;
+    }
+    else if(computerchoice === 'computer choose wicket'){
+        document.getElementById('result').innerHTML = 'You Lose';
+    }
+
+    ">bat</button>
+
+
+    <button
+    onclick="
+    document.getElementById('userchoice').innerHTML = 'You choose ball';
+    randomnmbr = Math.random() * 3;
+    computerchoice;
+    if(randomnmbr > 0 && randomnmbr <= 1){
+    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose bat';
+    }
+    else if(randomnmbr > 1 && randomnmbr <=2){
+    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose ball';
+    }
+    else{
+    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
+    }   
+
+
+    if(computerchoice === 'computer choose bat'){
+    document.getElementById('result').innerHTML = 'You Lose';
+    }
+    else if(computerchoice === 'computer choose ball'){
+    document.getElementById('result').innerHTML = `it's a tie!`;
+    }
+    else if(computerchoice === 'computer choose wicket'){
+    document.getElementById('result').innerHTML = 'You Win!';
+    }
+    " 
+    >ball</button>
+    
+
+    <button 
+    onclick = "
+    document.getElementById('userchoice').innerHTML = 'You choose Wicket';
+    randomnmbr = Math.random() * 3;
+    computerchoice;
+    if(randomnmbr > 0 && randomnmbr <= 1){
+    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose bat';
+    }
+    else if(randomnmbr > 1 && randomnmbr <= 2){
+    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose ball';
+    }
+    else{
+    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
+    }
+
+
+    if(computerchoice === 'computer choose bat'){
+    document.getElementById('result').innerHTML = 'You Win!';
+    }
+    else if(computerchoice === 'computer choose ball'){
+    document.getElementById('result').innerHTML = 'You Lose!';
+    }
+    else if(computerchoice === 'computer choose wicket'){
+    document.getElementById('result').innerHTML =`it's a tie!`; 
+    }
+
+
+    "
+    >wicket</button>
+
+    <h1 id="userchoice"></h1>
+    <h1 id="computerchoice"></h1>
+    <h1 id="result"></h1>
+
+
+    <script src="cricket.js"></script>
+</body>
+</html>
