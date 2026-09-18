@@ -1,2 +1,2 @@
 # Learn-JavaScript  //still working on this course......
-basic concepts of javascipts inluding main concepts of conditional statements,loops, functions,methods,arrays ,etc . learn by using these files named by their functions.
+basic concepts of javascipts inluding main concepts of conditional statements,loops, functions,methods,arrays,DOM manipulation,etc . learn by using these files named by their functions.
