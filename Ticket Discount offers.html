@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Enter your age:");
+        let gender = prompt("Enter your gender (male/female):");
+
+        if(age <= 5){
+            document.write("Your ticket is Free!");
+
+        }else if(age <= 8 || gender === 'female'){
+            document.write("you get a 50% discount!");
+        }else if(age >= 60){
+            document.write("you get a 30% discount!");
+        }else{
+            document.write("you get no discount.");
+        }
+    </script>
+</body>
+</html>
