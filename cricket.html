@@ -7,23 +7,12 @@
 </head>
 <body style="text-align: center">
     
-
     <h1>bat ball wicket game</h1>
 
     <button onclick="
-    document.getElementById('userchoice').innerHTML = 'you choose bat';
-    let randomnmbr = Math.random() * 3;
-    let computerchoice;
-    if(randomnmbr > 0 && randomnmbr <=1){
-    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose bat';
-    }
-    else if(randomnmbr > 1 && randomnmbr <=2){
-    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose ball';
-    }
-    else{
-    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
-    }   
-
+    document.getElementById('userchoice').innerHTML = 'you choose   bat';
+    makecomputerchoice();
+        
     if(computerchoice === 'computer choose ball'){
         document.getElementById('result').innerHTML = 'You Win!';
     }
@@ -37,21 +26,13 @@
     ">bat</button>
 
 
+
+
     <button
     onclick="
     document.getElementById('userchoice').innerHTML = 'You choose ball';
-    randomnmbr = Math.random() * 3;
-    computerchoice;
-    if(randomnmbr > 0 && randomnmbr <= 1){
-    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose bat';
-    }
-    else if(randomnmbr > 1 && randomnmbr <=2){
-    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose ball';
-    }
-    else{
-    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
-    }   
-
+        
+    makecomputerchoice(); 
 
     if(computerchoice === 'computer choose bat'){
     document.getElementById('result').innerHTML = 'You Lose';
@@ -66,21 +47,10 @@
     >ball</button>
     
 
-    <button 
-    onclick = "
+    <button onclick = "
     document.getElementById('userchoice').innerHTML = 'You choose Wicket';
-    randomnmbr = Math.random() * 3;
-    computerchoice;
-    if(randomnmbr > 0 && randomnmbr <= 1){
-    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose bat';
-    }
-    else if(randomnmbr > 1 && randomnmbr <= 2){
-    computerchoice = document.getElementById('computerchoice').innerHTML = 'computer choose ball';
-    }
-    else{
-    computerchoice =  document.getElementById('computerchoice').innerHTML = 'computer choose wicket';
-    }
-
+        
+    makecomputerchoice();
 
     if(computerchoice === 'computer choose bat'){
     document.getElementById('result').innerHTML = 'You Win!';
@@ -101,6 +71,23 @@
     <h1 id="result"></h1>
 
 
-    <script src="cricket.js"></script>
+    <script>
+
+
+        let computerchoice; 
+        function makecomputerchoice(){
+            let randomnmbr = Math.random() * 3;
+    
+            if(randomnmbr > 0 && randomnmbr <=1){
+                computerchoice =  document.getElementById('computerchoice').    innerHTML = 'computer choose bat';
+            }
+            else if(randomnmbr > 1 && randomnmbr <=2){
+                computerchoice =  document.getElementById('computerchoice').    innerHTML = 'computer choose ball';
+            }
+            else{
+                computerchoice =  document.getElementById('computerchoice').    innerHTML = 'computer choose wicket';
+            }   
+    }
+    </script>
 </body>
 </html>
